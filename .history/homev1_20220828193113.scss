@@ -8,8 +8,6 @@
 $headerTopUP: #ffffff;
 @import "header";
 @import "banner";
-//muốn element đè lên video thì phải thêm z-index và position vào thằng cha
-//VD:
 .test {
   position: relative;
   z-index: 1;
