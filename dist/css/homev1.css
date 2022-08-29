@@ -384,6 +384,7 @@ header .header-top .portion-upper .container .header-right .search .form-search 
   position: absolute;
   min-width: 280px;
   background-color: #ffffff;
+  border-radius: 5px;
   padding: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -532,9 +533,171 @@ header .header-top .portion-upper .container .header-right .search .form-search 
 }
 
 .banner .banner-below {
+  background-color: #ffffff;
+  padding-top: 50px;
+}
+
+.banner .banner-below .wellcome {
+  margin: 10px 10px 40px;
+}
+
+.banner .banner-below .wellcome p {
+  font-size: 24px;
+  font-weight: 200;
+  color: #666666;
+}
+
+.banner .banner-below .wellcome h2 {
+  font-size: 60px;
+  font-weight: 200;
+  color: #666666;
+}
+
+.banner .banner-below .wrapper-banner {
+  padding-bottom: 100px;
+  display: -ms-grid;
+  display: grid;
+  overflow: hidden;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.banner .banner-below .wrapper-banner .wrapper-fruit {
+  opacity: 0;
+  visibility: hidden;
+  max-height: 800px;
+  position: relative;
+  -webkit-box-shadow: 10px 10px 58px -34px rgba(0, 0, 0, 0.75);
+          box-shadow: 10px 10px 58px -34px rgba(0, 0, 0, 0.75);
+  max-width: 370px;
+  background-color: #f7f6f2;
+  margin: 0 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.banner .banner-below .wrapper-banner .wrapper-fruit .content-fruit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .banner-below .wrapper-banner .wrapper-fruit .content-fruit .icon-fruit {
+  margin: 40px 0 20px;
+  width: 70px;
+  height: 70px;
+}
+
+.banner .banner-below .wrapper-banner .wrapper-fruit .content-fruit .categories {
+  text-align: center;
+  overflow: hidden;
+}
+
+.banner .banner-below .wrapper-banner .wrapper-fruit .content-fruit .categories .wrapper-text {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
+.banner .banner-below .wrapper-banner .wrapper-fruit .content-fruit .categories .wrapper-text h3 {
+  margin: 0 auto;
+  font-family: "Berkshire Swash", cursive;
+  font-size: 50px;
+  font-weight: 400;
+  color: #222222;
+}
+
+.banner .banner-below .wrapper-banner .wrapper-fruit .content-fruit .fruit-content {
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+.banner .banner-below .wrapper-banner .wrapper-fruit .content-fruit .fruit-content p {
+  font-size: 13px;
+  color: #666666;
+}
+
+.banner .banner-below .wrapper-banner .wrapper-fruit .illustration {
+  -webkit-transform: translateY(40px);
+          transform: translateY(40px);
   width: 100%;
-  height: 1000px;
-  background-color: red;
+  bottom: 0;
+  left: 0;
+}
+
+.banner .banner-below .wrapper-banner .wrapper-fruit .illustration img {
+  width: 100%;
+  -webkit-animation: banner-below 1.5s infinite alternate;
+          animation: banner-below 1.5s infinite alternate;
+}
+
+.banner .banner-below .wrapper-banner :nth-child(2) .illustration img {
+  width: 120%;
+}
+
+.banner .banner-below .action-banner-1 {
+  -webkit-animation: move-up 0.5s 0.5s linear forwards, show 0s linear 0.5s alternate forwards;
+          animation: move-up 0.5s 0.5s linear forwards, show 0s linear 0.5s alternate forwards;
+}
+
+.banner .banner-below .action-banner-1 .wrapper-text {
+  -webkit-animation: move 1s linear 1.5s forwards;
+          animation: move 1s linear 1.5s forwards;
+}
+
+.banner .banner-below .action-banner-1 .hide {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: show 1s linear 1.5s alternate forwards;
+          animation: show 1s linear 1.5s alternate forwards;
+}
+
+.banner .banner-below .action-banner-2 {
+  -webkit-animation: move-up 0.5s linear 1s forwards, show 0s linear 1s alternate forwards;
+          animation: move-up 0.5s linear 1s forwards, show 0s linear 1s alternate forwards;
+}
+
+.banner .banner-below .action-banner-2 .wrapper-text {
+  -webkit-animation: move 1s linear 2s forwards;
+          animation: move 1s linear 2s forwards;
+}
+
+.banner .banner-below .action-banner-2 .hide {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: show 1s linear 2s alternate forwards;
+          animation: show 1s linear 2s alternate forwards;
+}
+
+.banner .banner-below .action-banner-3 {
+  -webkit-animation: move-up 0.5s linear 1.5s forwards, show 0s linear 1.5s alternate forwards;
+          animation: move-up 0.5s linear 1.5s forwards, show 0s linear 1.5s alternate forwards;
+}
+
+.banner .banner-below .action-banner-3 .wrapper-text {
+  -webkit-animation: move 1s linear 2.5s forwards;
+          animation: move 1s linear 2.5s forwards;
+}
+
+.banner .banner-below .action-banner-3 .hide {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-animation: show 1s linear 2.5s alternate forwards;
+          animation: show 1s linear 2.5s alternate forwards;
 }
 
 @-webkit-keyframes barley-left {
@@ -551,11 +714,67 @@ header .header-top .portion-upper .container .header-right .search .form-search 
   }
 }
 
-.test {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-  height: 1000px;
-  background-color: pink;
+@-webkit-keyframes banner-below {
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@keyframes banner-below {
+  to {
+    -webkit-transform: translateY(20px);
+            transform: translateY(20px);
+  }
+}
+
+@-webkit-keyframes move {
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes move {
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes move-up {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@keyframes move-up {
+  from {
+    -webkit-transform: translateY(50%);
+            transform: translateY(50%);
+  }
+  to {
+    -webkit-transform: translate(0);
+            transform: translate(0);
+  }
+}
+
+@-webkit-keyframes show {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes show {
+  to {
+    opacity: 1;
+    visibility: visible;
+  }
 }
 /*# sourceMappingURL=homev1.css.map */
