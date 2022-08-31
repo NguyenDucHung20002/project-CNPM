@@ -36,9 +36,9 @@ $headerTopUP: #ffffff;
     visibility: visible;
     transform: translate(0);
   }
-  // .action-hide {
-  //   animation: scrollHide 0.5s linear forwards;
-  // }
+  .action-hide {
+    animation: scrollHide 0.5s linear forwards;
+  }
 }
 @import "header";
 @import "banner";

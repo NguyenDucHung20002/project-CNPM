@@ -49,11 +49,8 @@ $(document).ready(function () {
   //----------- click to scroll to top ------------
   $(btnScrollTop).click(function (e) {
     e.preventDefault();
-    body.animate(
-      {
-        scrollTop: 0,
-      },
-      500
-    );
+    body.animate({
+      scrollTop: 0;
+    },500)
   });
 });

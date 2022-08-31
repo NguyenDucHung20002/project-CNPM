@@ -10,7 +10,7 @@ $headerTopUP: #ffffff;
   z-index: 9999;
   position: relative;
   .btn-to-top {
-    transition: all 0.5s;
+    position: 0.3s;
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
     opacity: 0;
     visibility: hidden;
@@ -36,9 +36,9 @@ $headerTopUP: #ffffff;
     visibility: visible;
     transform: translate(0);
   }
-  // .action-hide {
-  //   animation: scrollHide 0.5s linear forwards;
-  // }
+  .action-hide {
+    animation: scrollHide 0.5s linear forwards;
+  }
 }
 @import "header";
 @import "banner";

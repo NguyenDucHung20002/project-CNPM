@@ -1,8 +1,7 @@
 $(document).ready(function () {
   const leftContent = $(".active-nav-main").offset().left;
-  //nav drop down
   $(".shop-down").offset({ left: leftContent });
-  const body = $("html, body");
+
   //-------sự kiện scroll---------
   const heightWin = $(window).height();
   //icon home
@@ -18,6 +17,7 @@ $(document).ready(function () {
   });
   function actionScroll() {
     let top = $("html, body").scrollTop();
+    console.log("top:", top);
     //scroll icon home
     if (top > 10) {
       iconHome.css({
@@ -44,16 +44,4 @@ $(document).ready(function () {
       btnScrollTop.addClass("action-hide");
     }
   }
-
-  //-----------sự kiện click-------------
-  //----------- click to scroll to top ------------
-  $(btnScrollTop).click(function (e) {
-    e.preventDefault();
-    body.animate(
-      {
-        scrollTop: 0,
-      },
-      500
-    );
-  });
 });

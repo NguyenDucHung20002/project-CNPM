@@ -10,7 +10,6 @@ $headerTopUP: #ffffff;
   z-index: 9999;
   position: relative;
   .btn-to-top {
-    transition: all 0.5s;
     box-shadow: rgba(149, 157, 165, 0.5) 0px 8px 24px;
     opacity: 0;
     visibility: hidden;
@@ -32,13 +31,11 @@ $headerTopUP: #ffffff;
     }
   }
   .action-show {
-    opacity: 1;
-    visibility: visible;
-    transform: translate(0);
+    animation: scrollShow 0.5s linear 2s forwards;
   }
-  // .action-hide {
-  //   animation: scrollHide 0.5s linear forwards;
-  // }
+  .action-hide {
+    animation: scrollhide 0.5s linear 4s forwards;
+  }
 }
 @import "header";
 @import "banner";
@@ -49,7 +46,7 @@ $headerTopUP: #ffffff;
     transform: translate(0);
   }
 }
-@keyframes scrollHide {
+@keyframes scrollShow {
   to {
     opacity: 0;
     visibility: hidden;
